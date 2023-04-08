@@ -8,22 +8,22 @@
       location = "group:Packages"
       name = "Packages">
       <FileRef
-         location = "group:ImageCache">
-      </FileRef>
-      <FileRef
-         location = "group:Presentation">
-      </FileRef>
-      <FileRef
          location = "group:Data">
       </FileRef>
       <FileRef
          location = "group:Domain">
       </FileRef>
       <FileRef
+         location = "group:Presentation">
+      </FileRef>
+      <FileRef
          location = "group:BaseRepo">
       </FileRef>
       <FileRef
          location = "group:Utils">
+      </FileRef>
+      <FileRef
+         location = "group:ImageCache">
       </FileRef>
       <FileRef
          location = "group:CoreNetwork">

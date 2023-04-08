@@ -12,6 +12,7 @@ import CoreError
 // MARK: - RepositoryListViewModelProtocol
 public protocol RepositoryListViewModelProtocol {
     func fetchPublicReposList()
+    func search(query: String)
 }
 
 // MARK: - RepositoryListViewModel
@@ -38,6 +39,12 @@ extension RepositoryListViewModel: RepositoryListViewModelProtocol {
             case let .failure(error):
                 self?.didFailToLoadPublicRepositories(error)
             }
+        }
+    }
+    
+    public func search(query: String) {
+        useCase.searchPublicReposList(query: query) { [weak self] data in
+            self?.didLoadPublicRepositories(data)
         }
     }
 }

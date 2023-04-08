@@ -11,7 +11,8 @@ import SwiftUI
 public struct RepositoryListView: View {
 
     @ObservedObject var viewModel: RepositoryListViewModel
-
+    @State private var query = ""
+    
     public var body: some View {
         NavigationView {
             List {
@@ -22,6 +23,10 @@ public struct RepositoryListView: View {
                 }
             }
             .navigationTitle(viewModel.title)
+            .searchable(text: $query, prompt: "Find Repo...")
+            .onChange(of: query) { newQuery in
+                viewModel.search(query: newQuery)
+            }
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
