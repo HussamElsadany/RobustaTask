@@ -8,6 +8,9 @@
       location = "group:Packages"
       name = "Packages">
       <FileRef
+         location = "group:BaseRepo">
+      </FileRef>
+      <FileRef
          location = "group:Utils">
       </FileRef>
       <FileRef
