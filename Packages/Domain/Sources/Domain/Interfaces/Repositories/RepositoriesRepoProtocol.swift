@@ -7,6 +7,6 @@
 
 import CoreError
 
-public protocol RepositoriesRepoProtocol {
+public protocol PublicRepositoriesRepoProtocol {
     func fetchPublicReposList(completion: @escaping (Result<[RepositoryModel], CoreError>) -> Void)
 }

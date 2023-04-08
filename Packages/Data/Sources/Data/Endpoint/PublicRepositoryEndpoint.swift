@@ -7,11 +7,11 @@
 
 import CoreNetwork
 
-enum RecipesEndpoint {
+enum PublicRepositoryEndpoint {
     case getPublicRepository
 }
 
-extension RecipesEndpoint: EndpointProtocol {
+extension PublicRepositoryEndpoint: EndpointProtocol {
 
     // Should be handled as base url for all the app and read from config file, change the pathes.
     var baseURL: String {
