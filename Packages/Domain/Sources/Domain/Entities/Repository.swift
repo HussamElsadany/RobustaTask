@@ -6,32 +6,32 @@
 //
 
 public struct RepositoryModel: Codable, Equatable {
-    let id: Int
-    let nodeID, name, fullName: String
-    let welcomePrivate: Bool
-    let owner: RepositoryOwnerModel
-    let htmlURL: String
-    let description: String?
-    let fork: Bool
-    let url, forksURL: String
-    let keysURL, collaboratorsURL: String
-    let teamsURL, hooksURL: String
-    let issueEventsURL: String
-    let eventsURL: String
-    let assigneesURL, branchesURL: String
-    let tagsURL: String
-    let blobsURL, gitTagsURL, gitRefsURL, treesURL: String
-    let statusesURL: String
-    let languagesURL, stargazersURL, contributorsURL, subscribersURL: String
-    let subscriptionURL: String
-    let commitsURL, gitCommitsURL, commentsURL, issueCommentURL: String
-    let contentsURL, compareURL: String
-    let mergesURL: String
-    let archiveURL: String
-    let downloadsURL: String
-    let issuesURL, pullsURL, milestonesURL, notificationsURL: String
-    let labelsURL, releasesURL: String
-    let deploymentsURL: String
+    public let id: Int
+    public let nodeID, name, fullName: String
+    public let welcomePrivate: Bool
+    public let owner: RepositoryOwnerModel
+    public let htmlURL: String
+    public let description: String?
+    public let fork: Bool
+    public let url, forksURL: String
+    public let keysURL, collaboratorsURL: String
+    public let teamsURL, hooksURL: String
+    public let issueEventsURL: String
+    public let eventsURL: String
+    public let assigneesURL, branchesURL: String
+    public let tagsURL: String
+    public let blobsURL, gitTagsURL, gitRefsURL, treesURL: String
+    public let statusesURL: String
+    public let languagesURL, stargazersURL, contributorsURL, subscribersURL: String
+    public let subscriptionURL: String
+    public let commitsURL, gitCommitsURL, commentsURL, issueCommentURL: String
+    public let contentsURL, compareURL: String
+    public let mergesURL: String
+    public let archiveURL: String
+    public let downloadsURL: String
+    public let issuesURL, pullsURL, milestonesURL, notificationsURL: String
+    public let labelsURL, releasesURL: String
+    public let deploymentsURL: String
 
     enum CodingKeys: String, CodingKey {
         case id
@@ -83,18 +83,18 @@ public struct RepositoryModel: Codable, Equatable {
 
 
 public struct RepositoryOwnerModel: Codable, Equatable {
-    let login: String
-    let id: Int
-    let nodeID: String
-    let avatarURL: String
-    let gravatarID: String
-    let url, htmlURL, followersURL: String
-    let followingURL, gistsURL, starredURL: String
-    let subscriptionsURL, organizationsURL, reposURL: String
-    let eventsURL: String
-    let receivedEventsURL: String
-    let type: RepositoryOwnerType
-    let siteAdmin: Bool
+    public let login: String
+    public let id: Int
+    public let nodeID: String
+    public let avatarURL: String
+    public let gravatarID: String
+    public let url, htmlURL, followersURL: String
+    public let followingURL, gistsURL, starredURL: String
+    public let subscriptionsURL, organizationsURL, reposURL: String
+    public let eventsURL: String
+    public let receivedEventsURL: String
+    public let type: RepositoryOwnerType
+    public let siteAdmin: Bool
 
     enum CodingKeys: String, CodingKey {
         case login, id
