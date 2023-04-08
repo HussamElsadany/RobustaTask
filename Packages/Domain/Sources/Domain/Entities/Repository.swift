@@ -5,7 +5,7 @@
 //  Created by Hussam Elsadany on 4/8/23.
 //
 
-struct RepositoryModel: Codable, Equatable {
+public struct RepositoryModel: Codable, Equatable {
     let id: Int
     let nodeID, name, fullName: String
     let welcomePrivate: Bool
@@ -82,7 +82,7 @@ struct RepositoryModel: Codable, Equatable {
 }
 
 
-struct RepositoryOwnerModel: Codable, Equatable {
+public struct RepositoryOwnerModel: Codable, Equatable {
     let login: String
     let id: Int
     let nodeID: String
@@ -117,7 +117,7 @@ struct RepositoryOwnerModel: Codable, Equatable {
     }
 }
 
-enum RepositoryOwnerType: String, Codable, Equatable {
+public enum RepositoryOwnerType: String, Codable, Equatable {
     case organization = "Organization"
     case user = "User"
 }
