@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Presentation
 
 @main
 struct RobustaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RepositoryListRouter.assemple()
         }
     }
 }

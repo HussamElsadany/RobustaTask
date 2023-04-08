@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC5E31E329E1E30900DA6F60 /* BaseRepo in Frameworks */ = {isa = PBXBuildFile; productRef = DC5E31E229E1E30900DA6F60 /* BaseRepo */; };
+		DC5E31E529E1E30900DA6F60 /* CoreError in Frameworks */ = {isa = PBXBuildFile; productRef = DC5E31E429E1E30900DA6F60 /* CoreError */; };
+		DC5E31E729E1E30900DA6F60 /* CoreNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = DC5E31E629E1E30900DA6F60 /* CoreNetwork */; };
+		DC5E31E929E1E30900DA6F60 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = DC5E31E829E1E30900DA6F60 /* Data */; };
+		DC5E31EB29E1E30900DA6F60 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = DC5E31EA29E1E30900DA6F60 /* Domain */; };
+		DC5E31ED29E1E30900DA6F60 /* ImageCache in Frameworks */ = {isa = PBXBuildFile; productRef = DC5E31EC29E1E30900DA6F60 /* ImageCache */; };
+		DC5E31EF29E1E30900DA6F60 /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = DC5E31EE29E1E30900DA6F60 /* Presentation */; };
+		DC5E31F129E1E30900DA6F60 /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = DC5E31F029E1E30900DA6F60 /* Utils */; };
 		DCDD543A29E12F2B000FF572 /* RobustaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDD543929E12F2B000FF572 /* RobustaApp.swift */; };
-		DCDD543C29E12F2B000FF572 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDD543B29E12F2B000FF572 /* ContentView.swift */; };
 		DCDD543E29E12F2E000FF572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDD543D29E12F2E000FF572 /* Assets.xcassets */; };
 		DCDD544229E12F2E000FF572 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDD544129E12F2E000FF572 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +23,6 @@
 /* Begin PBXFileReference section */
 		DCDD543629E12F2B000FF572 /* Robusta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robusta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDD543929E12F2B000FF572 /* RobustaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobustaApp.swift; sourceTree = "<group>"; };
-		DCDD543B29E12F2B000FF572 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DCDD543D29E12F2E000FF572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCDD543F29E12F2E000FF572 /* Robusta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Robusta.entitlements; sourceTree = "<group>"; };
 		DCDD544129E12F2E000FF572 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -27,17 +33,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5E31EB29E1E30900DA6F60 /* Domain in Frameworks */,
+				DC5E31ED29E1E30900DA6F60 /* ImageCache in Frameworks */,
+				DC5E31E529E1E30900DA6F60 /* CoreError in Frameworks */,
+				DC5E31E729E1E30900DA6F60 /* CoreNetwork in Frameworks */,
+				DC5E31E929E1E30900DA6F60 /* Data in Frameworks */,
+				DC5E31E329E1E30900DA6F60 /* BaseRepo in Frameworks */,
+				DC5E31F129E1E30900DA6F60 /* Utils in Frameworks */,
+				DC5E31EF29E1E30900DA6F60 /* Presentation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC5E31E129E1E30900DA6F60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DCDD542D29E12F2B000FF572 = {
 			isa = PBXGroup;
 			children = (
 				DCDD543829E12F2B000FF572 /* Robusta */,
 				DCDD543729E12F2B000FF572 /* Products */,
+				DC5E31E129E1E30900DA6F60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				DCDD543929E12F2B000FF572 /* RobustaApp.swift */,
-				DCDD543B29E12F2B000FF572 /* ContentView.swift */,
 				DCDD543D29E12F2E000FF572 /* Assets.xcassets */,
 				DCDD543F29E12F2E000FF572 /* Robusta.entitlements */,
 				DCDD544029E12F2E000FF572 /* Preview Content */,
@@ -85,6 +106,16 @@
 			dependencies = (
 			);
 			name = Robusta;
+			packageProductDependencies = (
+				DC5E31E229E1E30900DA6F60 /* BaseRepo */,
+				DC5E31E429E1E30900DA6F60 /* CoreError */,
+				DC5E31E629E1E30900DA6F60 /* CoreNetwork */,
+				DC5E31E829E1E30900DA6F60 /* Data */,
+				DC5E31EA29E1E30900DA6F60 /* Domain */,
+				DC5E31EC29E1E30900DA6F60 /* ImageCache */,
+				DC5E31EE29E1E30900DA6F60 /* Presentation */,
+				DC5E31F029E1E30900DA6F60 /* Utils */,
+			);
 			productName = Robusta;
 			productReference = DCDD543629E12F2B000FF572 /* Robusta.app */;
 			productType = "com.apple.product-type.application";
@@ -139,7 +170,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCDD543C29E12F2B000FF572 /* ContentView.swift in Sources */,
 				DCDD543A29E12F2B000FF572 /* RobustaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +380,41 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC5E31E229E1E30900DA6F60 /* BaseRepo */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BaseRepo;
+		};
+		DC5E31E429E1E30900DA6F60 /* CoreError */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreError;
+		};
+		DC5E31E629E1E30900DA6F60 /* CoreNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreNetwork;
+		};
+		DC5E31E829E1E30900DA6F60 /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		DC5E31EA29E1E30900DA6F60 /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
+		};
+		DC5E31EC29E1E30900DA6F60 /* ImageCache */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ImageCache;
+		};
+		DC5E31EE29E1E30900DA6F60 /* Presentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Presentation;
+		};
+		DC5E31F029E1E30900DA6F60 /* Utils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utils;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCDD542E29E12F2B000FF572 /* Project object */;
 }
