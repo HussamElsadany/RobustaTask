@@ -34,8 +34,8 @@ final class PublicRepositoryRepoTests: XCTestCase {
         sut              = nil
     }
     
-    //MARK: FetchRecipesTests
-    func testPublicRepositoryRepo_WhenRequestResponseSucceeds_FetchRecipes() {
+    //MARK: FetchRepositoriesTests
+    func testPublicRepositoryRepo_WhenRequestResponseSucceeds_FetchRepositories() {
         // Given
         let mockedResponse = [RepositoryModel].mock()
         let result: Result<[RepositoryModel], CoreError> = .success(mockedResponse)
@@ -51,7 +51,7 @@ final class PublicRepositoryRepoTests: XCTestCase {
         XCTAssertEqual(mockedResponse, tempResponse)
     }
     
-    func testPublicRepositoryRepo_WhenRequestResponseFailed_FetchRecipes() {
+    func testPublicRepositoryRepo_WhenRequestResponseFailed_FetchRepositories() {
         // Given
         let result: Result<[RepositoryModel], CoreError> = .failure(error)
         remoteDataSource.result = result
@@ -66,7 +66,7 @@ final class PublicRepositoryRepoTests: XCTestCase {
         XCTAssertNil(tempResponse)
     }
     
-    func testPublicRepositoryRepo_WhenRequestResponseSucceedsCalledOnce_FetchRecipes() {
+    func testPublicRepositoryRepo_WhenRequestResponseSucceedsCalledOnce_FetchRepositories() {
         // Given
         let mockedResponse = [RepositoryModel].mock()
         let result: Result<[RepositoryModel], CoreError> = .success(mockedResponse)
@@ -79,7 +79,7 @@ final class PublicRepositoryRepoTests: XCTestCase {
         XCTAssertEqual(remoteDataSource.counter, 1)
     }
     
-    func testPublicRepositoryRepo_WhenRequestResponseSucceedsCheckPath_FetchRecipes() {
+    func testPublicRepositoryRepo_WhenRequestResponseSucceedsCheckPath_FetchRepositories() {
         // Given
         let mockedResponse = [RepositoryModel].mock()
         let result: Result<[RepositoryModel], CoreError> = .success(mockedResponse)
@@ -92,7 +92,7 @@ final class PublicRepositoryRepoTests: XCTestCase {
         XCTAssertEqual(remoteDataSource.endpoint?.path, "/repositories")
     }
     
-    func testPublicRepositoryRepo_WhenRequestResponseSucceedsLocalDataSource_FetchRecipes() {
+    func testPublicRepositoryRepo_WhenRequestResponseSucceedsLocalDataSource_FetchRepositories() {
         // Given
         let mockedResponse = [RepositoryModel].mock()
         let result: Result<[RepositoryModel], CoreError> = .success(mockedResponse)
